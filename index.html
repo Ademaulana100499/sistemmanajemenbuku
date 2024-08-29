@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Manajemen Buku</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Manajemen Buku</h1>
+        
+        <!-- Form untuk menambahkan Penulis -->
+        <div class="form-container">
+            <h2>Tambah Penulis</h2>
+            <input type="text" id="author-name" placeholder="Nama Penulis">
+            <button id="add-author-btn">Tambah Penulis</button>
+        </div>
+
+        <!-- Form untuk menambahkan Buku -->
+        <div class="form-container">
+            <h2>Tambah Buku</h2>
+            <input type="text" id="book-title" placeholder="Judul Buku">
+            <input type="text" id="book-isbn" placeholder="ISBN">
+            <select id="author-select">
+                <option value="">Pilih Penulis</option>
+            </select>
+            <button id="add-book-btn">Tambah Buku</button>
+        </div>
+
+        <!-- Daftar Penulis dan Buku -->
+        <div class="authors-container">
+            <h2>Penulis dan Buku</h2>
+            <ul id="authors-list">
+                <!-- Penulis dan Buku akan ditampilkan di sini -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
